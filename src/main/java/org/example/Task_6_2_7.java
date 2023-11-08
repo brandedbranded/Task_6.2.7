@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class Main {
+public class Task_6_2_7 {
     public static void main(String[] args) throws InterruptedException {
         chrome();
         edge();
@@ -15,7 +15,7 @@ public class Main {
     }
 
     public static void chrome() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driverChrome", "S:\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "S:\\chromedriver-win64\\chromedriver.exe");
         WebDriver driverChrome = new ChromeDriver();
 
         driverChrome.get("https://github.com/brandedbranded?tab=repositories");
@@ -24,7 +24,7 @@ public class Main {
     }
 
     public static void edge() throws InterruptedException {
-        System.setProperty("webdriver.edge.driverEdge", "S:\\edgedriver\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "S:\\edgedriver\\msedgedriver.exe");
         WebDriver driverEdge = new EdgeDriver();
 
         driverEdge.get("https://github.com/brandedbranded?tab=repositories");
@@ -33,7 +33,7 @@ public class Main {
     }
 
     public static void firefox() throws InterruptedException {
-        System.setProperty("webdriver.firefox.driverFirefox", "S:\\firefoxDriver\\geckodriver.exe");
+        System.setProperty("webdriver.firefox.driver", "S:\\firefoxDriver\\geckodriver.exe");
         WebDriver driverFirefox = new FirefoxDriver();
 
         driverFirefox.get("https://github.com/brandedbranded?tab=repositories");
